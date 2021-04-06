@@ -1,15 +1,15 @@
 package com.example.firebaserealtimedatabase;
 
-public class chatMessage {
+public class Message {
     private String text;
     private long time;
 
-    public chatMessage(String text, long time) {
+    public Message(String text, long time) {
         this.text = text;
         this.time = time;
     }
 
-    public chatMessage() {
+    public Message() {
     }
 
     public String getText() {
@@ -26,5 +26,13 @@ public class chatMessage {
 
     public void setTime(long time) {
         this.time = time;
+    }
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "text='" + text + '\'' +
+                ", time=" + time +
+                '}';
     }
 }
